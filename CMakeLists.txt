@@ -96,6 +96,7 @@ include_directories(${CAFFE_INCLUDE_DIRS})
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${CUDA_INCLUDE_DIRS})
+set(PYTHON_INCLUDE_DIRS ${PYTHON_INCLUDE_DIRS} /usr/local/lib/python3.6/dist-packages/numpy/core/include)
 include_directories(${PYTHON_INCLUDE_DIRS})
 
 feature_summary(WHAT ALL)
